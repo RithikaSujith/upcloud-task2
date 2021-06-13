@@ -33,7 +33,6 @@ class GetData extends React.Component{
       componentDidMount() {
         setTimeout(()=> {
             Axios.get("https://cors-anywhere.herokuapp.com/https://dry-bayou-99944.herokuapp.com/profiles/")
-            .then(res => res.json())
             .then(
               (result) => {
                 this.setState({
