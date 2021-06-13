@@ -58,6 +58,7 @@ class ValiationForm extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
+        <div className="form p-4 mb-2">
         <div>
           <input
             name="name"
@@ -95,6 +96,7 @@ class ValiationForm extends React.Component {
             value={this.state.address}
             onChange={this.handleChange}
           />          
+        </div>
         </div>
         <button type="submit">Save</button>
       </form>

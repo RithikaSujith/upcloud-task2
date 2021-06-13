@@ -8,7 +8,7 @@ import GetData from "./GetData";
 class TabNav extends React.Component {
   render() {
     return (
-<Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
+<Tabs defaultActiveKey="add" id="uncontrolled-tab-example">
   <Tab eventKey="add" title="AddData">
     <ValidationForm />
   </Tab>

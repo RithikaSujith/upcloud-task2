@@ -73,7 +73,6 @@ class GetData extends React.Component{
           </div>                                                      
           </div>    
             
-
         );
     }
 }
