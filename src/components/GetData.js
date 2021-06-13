@@ -65,7 +65,7 @@ class GetData extends React.Component{
                 <div className="row">
                 {data.map(data => (
                 <div className="col-md-4">
-                        <Card  id={data.id} name={data.name} email={data.email} address={data.address}/>
+                        <Card  id={data.id} name={data.name} email={data.email} contact={data.contact} address={data.address}/>
                     </div>
               ))}                                         
                 </div>

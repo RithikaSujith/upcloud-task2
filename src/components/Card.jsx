@@ -3,15 +3,14 @@ import './Card.css';
 
 const Card = props =>{
     return(
-        <div className="card text-center">
-            {/* <div className="overflow">
-                <img src={props.imgsrc} alt="img1" className='card-img-top'/>
-            </div> */}
+        <div className="card text-left">
+            
             <div className="card-body text-dark">
-                <h4 className="card-title">{props.id}.{props.name}{props.email}{props.contact}{props.address}</h4>
-                <p className="card-text text-secondary">
-                    {props.email}
-                </p>
+                <h4 className="card-title">{props.name}{props.contact}</h4>
+                <h5>{props.email}</h5>
+                <h6 className="card-text text-dark">
+                {props.address}
+                </h6>
 
             </div> 
 
