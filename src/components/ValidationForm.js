@@ -26,7 +26,7 @@ class ValiationForm extends React.Component {
   validate = () => {
     let contactError = "";
     let emailError = "";
-    // let passwordError = "";
+    
 
     let value=this.state.contact;
     if (value.length!==10) {
@@ -103,3 +103,4 @@ class ValiationForm extends React.Component {
 }
 
 export default ValiationForm;
+

@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import "./App.css";
-import ValidationForm from "./components/ValidationForm";
-import GetData from "./components/GetData";
+import TabNav from "./components/Tabs";
+// import ValidationForm from "./components/ValidationForm";
+// import GetData from "./components/GetData";
+
 
 class App extends Component {
   state = {
@@ -11,9 +13,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <ValidationForm />
-        <GetData/>        
-      </div>
+        <TabNav />        
+       </div>      
     );
   }
 }
