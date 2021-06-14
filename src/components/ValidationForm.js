@@ -1,4 +1,5 @@
 import React from "react";
+import axios from 'axios';
 
 const initialState = {
   name: "",
@@ -52,6 +53,14 @@ class ValiationForm extends React.Component {
       console.log(this.state);
       // clear form
       this.setState(initialState);
+      
+      axios.post('https://cors-anywhere.herokuapp.com/https://dry-bayou-99944.herokuapp.com/profiles/', this.state)
+      .then(response=>{
+        console.log(response)
+      })
+      .catch(error=>{
+        console.log(console.error)
+      })
     }
   };
 
