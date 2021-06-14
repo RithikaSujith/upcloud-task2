@@ -51,8 +51,7 @@ class ValiationForm extends React.Component {
     const isValid = this.validate();
     if (isValid) {
       console.log(this.state);
-      // clear form
-      this.setState(initialState);
+      
 
       axios.post('https://cors-anywhere.herokuapp.com/https://dry-bayou-99944.herokuapp.com/profiles/', {
         name: this.state.name, 
@@ -67,6 +66,8 @@ class ValiationForm extends React.Component {
       .catch(error=>{
         console.log(console.error)
       })
+      // clear form
+      this.setState(initialState);
     }
     
   };
