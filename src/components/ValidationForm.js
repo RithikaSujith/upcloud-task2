@@ -53,15 +53,22 @@ class ValiationForm extends React.Component {
       console.log(this.state);
       // clear form
       this.setState(initialState);
-      
-      axios.post('https://cors-anywhere.herokuapp.com/https://dry-bayou-99944.herokuapp.com/profiles/', this.state)
+
+      axios.post('https://cors-anywhere.herokuapp.com/https://dry-bayou-99944.herokuapp.com/profiles/', {
+        name: this.state.name, 
+        contact: this.state.contact,
+        email: this.state.email,
+        address: this.state.address
+      })
       .then(response=>{
+        alert(response.data.status)
         console.log(response)
       })
       .catch(error=>{
         console.log(console.error)
       })
     }
+    
   };
 
   render() {
