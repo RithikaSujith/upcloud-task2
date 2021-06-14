@@ -6,7 +6,7 @@ const Card = props =>{
         <div className="card text-left">
             
             <div className="card-body text-dark">
-                <h4 className="card-title">{props.name}{props.contact}</h4>
+                <h4 className="card-title">{props.name}  {props.contact}</h4>
                 <h5>{props.email}</h5>
                 <h6 className="card-text text-dark">
                 {props.address}
