@@ -64,7 +64,7 @@ class GetData extends React.Component{
             <div className="container-fluid d-flex justify-content-center">
                 <div className="row">
                 {data.map(data => (
-                <div className="col-md-4">
+                <div className="col-12">
                         <Card  id={data.id} name={data.name} email={data.email} contact={data.contact} address={data.address}/>
                     </div>
               ))}                                         
